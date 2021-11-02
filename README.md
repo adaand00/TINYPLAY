@@ -1,5 +1,5 @@
 # TINYPLAY
-A tiny game console using the attiny5
+A tiny (46x25mm) game console using the attiny5
 
 
 ## Development
