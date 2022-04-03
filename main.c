@@ -58,12 +58,12 @@ int main( void )
 			newpressedleft = 1;
 		}else if(butt > 120){
 			//right button pressed 				
-			newpressedright = 1;
-			newpressedleft = 0;	
+			newpressedleft = 1;
+			newpressedright = 0;	
 		}else if(butt > 100){
 			//left button pressed	
-			newpressedright = 0;
-			newpressedleft = 1;
+			newpressedleft = 0;
+			newpressedright = 1;
 		}else{
 			//no button pressed
 			newpressedright = 0;
@@ -130,10 +130,11 @@ int main( void )
 		// Row source, column sink
 		
 		char buff = (rows[currentRow] | (playerPosition==currentRow))<<3 |((1<<currentRow)^0b00000111);
+		buff = buff^0xFF;
 		
 		if (failed)
 		{
-			buff = 0b11111000;
+			buff = 0b00000111;
 		}
 		
 		// Serial shift out, highest bit first. 
