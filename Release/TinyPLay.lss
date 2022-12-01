@@ -167,7 +167,7 @@ Disassembly of section .text:
   fa:	5f 4f       	sbci	r21, 0xFF	; 255
   fc:	5d a9       	sts	0x4d, r21	; 0x80004d <numUpdates+0x1>
   fe:	4c a9       	sts	0x4c, r20	; 0x80004c <numUpdates>
- 100:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 100:	40 a1       	lds	r20, 0x40	; 0x800040 <__data_start>
  102:	a4 2f       	mov	r26, r20
  104:	b0 e0       	ldi	r27, 0x00	; 0
  106:	81 a1       	lds	r24, 0x41	; 0x800041 <playerPosition>
@@ -220,7 +220,7 @@ Disassembly of section .text:
  164:	52 95       	swap	r21
  166:	5f 70       	andi	r21, 0x0F	; 15
  168:	45 1b       	sub	r20, r21
- 16a:	40 a9       	sts	0x40, r20	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 16a:	40 a9       	sts	0x40, r20	; 0x800040 <__data_start>
  16c:	e7 2f       	mov	r30, r23
  16e:	f0 e0       	ldi	r31, 0x00	; 0
  170:	ee 5b       	subi	r30, 0xBE	; 190

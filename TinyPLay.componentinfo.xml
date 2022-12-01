@@ -41,7 +41,7 @@
 					<Attribute>template</Attribute>
 					<Category>source</Category>
 					<Condition>C Exe</Condition>
-					<FileContentHash>luIpXFCLiXnn0kcJb5LNwA==</FileContentHash>
+					<FileContentHash>KjvOcFWd++tbnsEMfVPd/w==</FileContentHash>
 					<FileVersion></FileVersion>
 					<Name>templates/main.c</Name>
 					<SelectString>Main file (.c)</SelectString>
@@ -79,7 +79,7 @@
 				<d4p1:string></d4p1:string>
 			</RteComponents>
 			<Status>Resolved</Status>
-			<VersionMode>Latest</VersionMode>
+			<VersionMode>Fixed</VersionMode>
 			<IsComponentInAtProject>true</IsComponentInAtProject>
 		</ProjectComponent>
 	</ProjectComponents>
